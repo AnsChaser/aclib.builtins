@@ -3,3 +3,4 @@
 /dist
 /tests
 *.egg-info
+/.idea
