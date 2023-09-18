@@ -5,7 +5,7 @@ with open('README.md', 'r', encoding='utf-8') as f:
 
 setup(
     name='aclib.builtins',
-    version='0.0.2',
+    version='0.0.3',
     author='AnsChaser',
     author_email='anschaser@163.com',
     description='extend functions for python builtins',
