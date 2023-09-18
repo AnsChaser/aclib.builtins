@@ -5,3 +5,4 @@
     # from aclib import builtins
     # import aclib.builtins
     from aclib.builtins import Str, Bin, Oct, Hex, BaseNumber
+    from aclib.builtins import decorator, SELF
