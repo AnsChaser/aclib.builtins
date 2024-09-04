@@ -45,5 +45,12 @@ class BaseTarget(object, metaclass=BaseTargetMeta):
             return self.__class__(self.name, start, end, self.similarity)
         else: return self
 
+    def scale(self, scale: float) -> Self:
+        if self != self.none:
+            start = int(self.start[0]*scale), int(self.start[1]*scale)
+            end = int(self.end[0]*scale), int(self.end[1]*scale)
+            return self.__class__(self.name, start, end, self.similarity)
+        else: return self
+
 
 _none = BaseTarget('', (-1,-1), (-1,-1), 0.0)
